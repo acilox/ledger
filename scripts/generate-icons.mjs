@@ -42,3 +42,13 @@ for (const r of renders) {
   await writeFile(resolve(STATIC, r.out), final);
   console.log(`wrote static/${r.out} (${r.size}x${r.size}${r.pad ? `, ${Math.round(r.pad * 100)}% safe-area pad` : ''})`);
 }
+
+// OG social-share image, 1200x630. Rendered from static/og-image.svg — see
+// docs/while-waiting-for-polar.md for the design intent.
+const ogSvg = readFileSync(resolve(STATIC, 'og-image.svg'));
+const ogPng = await sharp(ogSvg, { density: 200 })
+  .resize(1200, 630, { fit: 'contain' })
+  .png()
+  .toBuffer();
+await writeFile(resolve(STATIC, 'og-image.png'), ogPng);
+console.log('wrote static/og-image.png (1200x630)');

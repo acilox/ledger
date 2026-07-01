@@ -1,0 +1,18 @@
+# Every file in this repo defaults to the acilox org owner.
+# Requested reviewers are added automatically when a PR touches
+# matching paths.
+
+*                       @acilox
+
+# Docs get a lighter review since they don't ship code.
+/docs/                  @acilox
+
+# License worker changes affect ALL Acilox Labs products, not just
+# Ledger. Any change here should be reviewed against every product
+# using the shared worker (AMG, FHIR Lens, Ledger).
+/src/lib/license-*.ts   @acilox
+
+# Data model / storage changes need extra scrutiny — mental-health
+# entries must never be dropped silently across migrations.
+/src/lib/db.ts          @acilox
+/src/lib/export.ts      @acilox

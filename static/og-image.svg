@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif">
+  <rect width="1200" height="630" fill="#0f172a" />
+
+  <!-- Subtle decorative frame -->
+  <rect x="48" y="48" width="1104" height="534" rx="24" fill="none" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Journal mark (scaled 3.75x from favicon.svg 64x64 → 240x240) -->
+  <g transform="translate(480 90)">
+    <rect width="240" height="240" rx="52" fill="#1e293b" />
+    <rect x="64" y="75" width="113" height="15" rx="7" fill="#f1f5f9" />
+    <rect x="53" y="113" width="135" height="15" rx="7" fill="#f1f5f9" />
+    <rect x="75" y="150" width="90" height="15" rx="7" fill="#94a3b8" />
+  </g>
+
+  <!-- Wordmark -->
+  <text x="600" y="415" text-anchor="middle" font-size="88" font-weight="700" fill="#f8fafc" letter-spacing="-2">
+    Ledger
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="475" text-anchor="middle" font-size="34" font-weight="400" fill="#cbd5e1" letter-spacing="-0.5">
+    a calm CBT thought record
+  </text>
+
+  <!-- Fine print -->
+  <text x="600" y="540" text-anchor="middle" font-size="22" font-weight="500" fill="#64748b" letter-spacing="0.5">
+    local-first  ·  one-time $79  ·  not a medical device
+  </text>
+</svg>
