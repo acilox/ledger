@@ -1,0 +1,43 @@
+{
+  "name": "ledger",
+  "displayName": "Ledger",
+  "description": "CBT thought-record web app. Capture an anxious thought in 30 seconds, walk it through 10 cognitive distortions, and arrive at a balanced reframe — then bring the week's pattern to your next therapy session. Local-first, no account, no AI advice.",
+  "version": "0.1.0",
+  "publisher": "acilox",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://acilox.com/labs/ledger",
+  "bugs": {
+    "url": "mailto:labs@acilox.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acilox/ledger"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "test": "node --test --import tsx test/**/*.test.ts",
+    "prepare": "svelte-kit sync",
+    "icons": "node scripts/generate-icons.mjs"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.6",
+    "@sveltejs/kit": "^2.8.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^20.11.0",
+    "sharp": "^0.33.5",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0"
+  },
+  "dependencies": {
+    "dexie": "^4.0.10"
+  },
+  "type": "module"
+}
