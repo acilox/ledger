@@ -18,7 +18,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "tsc --noEmit",
-    "test": "node --test --import tsx test/**/*.test.ts",
+    "test": "node --test --import tsx test/*.test.ts",
     "prepare": "svelte-kit sync",
     "icons": "node scripts/generate-icons.mjs"
   },
